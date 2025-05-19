@@ -13,7 +13,7 @@
     "secrets",
     "security"
   ],
-  "author": "Your Name",
+  "author": "Panuwat Muangchu",
   "license": "MIT",
   "peerDependencies": {
     "eslint": "^9.0.0"
