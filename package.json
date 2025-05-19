@@ -1,0 +1,28 @@
+{
+  "name": "eslint-plugin-no-secrets",
+  "version": "1.0.0",
+  "description": "ESLint plugin to detect and warn about potential secrets or tokens in code.",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js"
+  },
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "secrets",
+    "security"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint": "^9.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "vitest": "^1.0.0"
+  },
+  "scripts": {
+    "test": "vitest"
+  }
+}
