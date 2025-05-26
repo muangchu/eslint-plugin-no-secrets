@@ -1,6 +1,6 @@
 {
   "name": "@muangchu/eslint-plugin-no-secrets",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "ESLint plugin to detect and warn about potential secrets or tokens in code.",
   "main": "./lib/index.js",
   "type": "module",
