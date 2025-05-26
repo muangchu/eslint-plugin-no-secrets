@@ -1,11 +1,11 @@
-# eslint-plugin-no-secrets
+# @muangchu/eslint-plugin-no-secrets
 
 Disallow logging of sensitive information (PII) such as emails and phone numbers.
 
 ## Installation
 
 ```bash
-npm install eslint-plugin-no-secrets --save-dev
+npm install @muangchu/eslint-plugin-no-secrets --save-dev
 ```
 
 
@@ -13,7 +13,7 @@ npm install eslint-plugin-no-secrets --save-dev
 
 ### Flat Config (ESLint v9+)
 ```js
-import noSecrets from 'eslint-plugin-no-secrets';
+import noSecrets from '@muangchu/eslint-plugin-no-secrets';
 
 export default [
   {
@@ -27,4 +27,18 @@ export default [
   }
 ];
 
+```
+
+
+## Development
+
+### Local development (using npm link)
+In your plugin directory:
+```bash
+npm link
+```
+
+In your Express.js project:
+```bash
+npm link @muangchu/eslint-plugin-no-secrets
 ```
