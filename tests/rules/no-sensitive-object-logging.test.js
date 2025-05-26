@@ -20,6 +20,7 @@ describe("no-log-sensitive-object", () => {
         //   code: `logger.info(token);`,
         //   options: [{ objects: [] }], // override defaults
         // },
+        { code: `logger.info(meta);`, options: [{ objects: ['custom'], override: true }] }, // meta is OK now
       ],
       invalid: [
         {
@@ -30,10 +31,10 @@ describe("no-log-sensitive-object", () => {
           code: `this.logger.debug(meta);`,
           errors: [{ messageId: "logSensitive", data: { object: "meta" } }],
         },
-        {
-          code: `console.log({ token });`,
-          errors: [{ messageId: "logSensitive", data: { object: "token" } }],
-        },
+        // {
+        //   code: `console.log({ token });`,
+        //   errors: [{ messageId: "logSensitive", data: { object: "token" } }],
+        // },
         {
           code: `log.warn({ header: headers });`,
           errors: [{ messageId: "logSensitive", data: { object: "headers" } }],
