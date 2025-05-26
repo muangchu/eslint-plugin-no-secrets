@@ -2,11 +2,19 @@
   "name": "@muangchu/eslint-plugin-no-secrets",
   "version": "0.1.0",
   "description": "ESLint plugin to detect and warn about potential secrets or tokens in code.",
-  "type": "module",
   "main": "./lib/index.js",
+  "type": "module",
   "exports": {
     ".": "./lib/index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/muangchu/eslint-plugin-no-secrets.git"
+  },
+  "bugs": {
+    "url": "https://github.com/muangchu/eslint-plugin-no-secrets/issues"
+  },
+  "homepage": "https://github.com/muangchu/eslint-plugin-no-secrets#readme",
   "keywords": [
     "eslint",
     "eslintplugin",
