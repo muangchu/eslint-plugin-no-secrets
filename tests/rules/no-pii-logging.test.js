@@ -20,8 +20,8 @@ describe("no-pii-logging", () => {
           code: `logger.info({ id: user.id });`,
         },
         {
-          code: `console.log({ customField: user.secret });`,
-          options: [{ fields: ["secret"] }],
+          code: `console.log(email);`,
+          options: [{ fields: ["secret"], override: true }],
         },
       ],
       invalid: [
@@ -44,6 +44,11 @@ describe("no-pii-logging", () => {
         {
           code: `log.debug('Request email: ' + JSON.stringify(req.body.email));`,
           errors: [{ messageId: "logPII", data: { field: "email" } }],
+        },
+        {
+          code: `console.log(secret);`,
+          options: [{ fields: ["secret"], override: true }],
+          errors: [{ messageId: "logPII", data: { field: "secret" } }],
         },
       ],
     });
