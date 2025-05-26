@@ -1,5 +1,5 @@
 {
-  "name": "eslint-plugin-no-secrets",
+  "name": "@muangchu/eslint-plugin-no-secrets",
   "version": "0.0.1",
   "description": "ESLint plugin to detect and warn about potential secrets or tokens in code.",
   "type": "module",
@@ -10,16 +10,17 @@
   "keywords": [
     "eslint",
     "eslintplugin",
+    "eslint-plugin",
     "secrets",
     "security"
   ],
   "author": "Panuwat Muangchu",
   "license": "MIT",
   "peerDependencies": {
-    "eslint": "^9.0.0"
+    "eslint": "^9.27.0"
   },
   "devDependencies": {
-    "eslint": "^9.0.0",
+    "eslint": "^9.27.0",
     "vitest": "^1.0.0"
   },
   "scripts": {
